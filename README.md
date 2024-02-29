@@ -144,7 +144,7 @@ Here is the CloudFront Statistics
 
 ![Img Architecture](images/statCloudFront.png)
 
-3. Conclusion
+3. Conclusion <br />
     Congratulations! You have finished the Creating serverless video streaming service using S3 Bucket, CloudFront and ReactJS.
 
 4. Clean up
