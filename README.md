@@ -27,20 +27,127 @@ Before Starting this guide,you will need:
 - An IAM user that has the access and create AWS resources.
 - Basic understanding of Javascript
 
-1. -Architecture
+1. Architecture
 
-![Img Architecture](images/serverless-streaming-app.png)
+<img src="images/serverless-streaming-app.png" width=1000 height=600> 
 
-1.1 Crerate S3 Bucket with no public access , enable versionning
-1.2 Create origin access before creating cloudFront
+ <br />
+
+1.1 Crerate S3 Bucket with no public access and enable versionning enabled
+
+ ![Img Architecture](images/s3bucket.png) 
+
+
+
+ ![Img Architecture](images/bucket2.png) 
+
+ <br />
+
+1.2 Create origin access before creating CloudFront
+
+
+- From left corner click on symbol
+
+ ![Img Architecture](images/OAC00.png) 
+
+ 
+- Click on Origin access and create control setting.
+  
+![Img Architecture](images/OAC0.png)
+
+- Give a name, choose origin type as S3 and click on create.
+  
+![Img Architecture](images/OAC2.png) 
+
 1.3 Create the distribution
 
-2. Create ReactJS web application
+- From left corner click on Distributions
+  
+![Img Architecture](images/distribution1.png)
 
-a- Inside project directory do `npx create-react-app serverless-streaming-service`
-b- Go to the rectJS project `cd serverless-streaming-service`
-c- Start application using `npm start `
+- Choose origin domain , give a name,  origin access control settings as recommended and origin access control created before  
+
+![Img Architecture](images/distribution2.png)
+- Choose redirect HTTP to HTTPS 
+  
+![Img Architecture](images/distribution3.png)
+
+- Choose Do not enable security protections from WAF
+  
+![Img Architecture](images/distribution5.png)
+
+- Click on create distribution to create the distribution
+  
+![Img Architecture](images/distribution4.png)
 
 
+- After creating the distribution cloudfront will deployed. Copy the given policy.
+  
 
-TO BE CONTINUED !
+![Img Architecture](images/update-cloudFront-policy.png)
+
+- Paste the policy to S3 bucket policy; it allows Cloudfront to have access to S3 Bucket.
+  
+
+![Img Architecture](images/s3-bucket-policy-updated.png)
+
+
+- Copy CloudFront URL , paste in the browser add / and copy and paste S3 bucket object key 
+ 
+
+![Img Architecture](images/test1.png)
+
+
+1. Create ReactJS web application <br />
+   
+ Here we create a simple web application and added cloudfront URL to our page.
+
+-  Inside project directory do <br/>
+   ```bash
+    npx create-react-app serverless-streaming-service
+   ```
+- Go to the ReactJS project <br/>
+    ```bash
+   cd serverless-streaming-service
+   ```
+- Start application using <br/>
+
+    ```bash
+    npm start
+    ```
+Update App.js file by adding cloudfront URL
+
+  ```bash 
+    function App() {
+    return (
+        <div className="App">
+        <h2>Welcome to serverless video streaming service </h2>
+        <video width={700} height={400} controls>
+            <source src="https://dmsi7k9yxrqf3.cloudfront.net/Luke-combs-and-Tracy-Chapman.mp4"
+            type='video/mp4' />
+            
+        </video>
+        </div>
+    );
+    }
+
+    export default App;
+```
+Now go to the browser and write
+```bash 
+   localhost:3000
+```
+
+![Img Architecture](images/final.png)
+
+Here is the CloudFront Statistics 
+
+![Img Architecture](images/statCloudFront.png)
+
+3. Conclusion
+    Congratulations! You have finished the Creating serverless video streaming service using S3 Bucket, CloudFront and ReactJS.
+
+4. Clean up
+
+- Delete S3 Bucket
+- Disable Distribution from CloudFront console before deleting CloudFront
