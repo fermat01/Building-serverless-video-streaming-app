@@ -27,7 +27,7 @@ Before Starting this guide,you will need:
 - An IAM user that has the access and create AWS resources.
 - Basic understanding of Javascript
 
-1. Architecture
+## 1. Architecture
 
 <img src="images/serverless-streaming-app.png" width=1000 height=600> 
 
@@ -98,7 +98,7 @@ Before Starting this guide,you will need:
 ![Img Architecture](images/test1.png)
 
 
-1. Create ReactJS web application <br />
+## 2. Create ReactJS web application <br />
    
  Here we create a simple web application and added cloudfront URL to our page.
 
@@ -144,10 +144,10 @@ Here is the CloudFront Statistics
 
 ![Img Architecture](images/statCloudFront.png)
 
-3. Conclusion <br />
+## 3. Conclusion <br />
     Congratulations! You have finished the Creating serverless video streaming service using S3 Bucket, CloudFront and ReactJS.
 
-4. Clean up
+##  4. Clean up
 
 - Delete S3 Bucket
 - Disable Distribution from CloudFront console before deleting CloudFront
