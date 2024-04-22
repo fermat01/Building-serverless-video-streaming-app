@@ -29,7 +29,7 @@ Before Starting this guide,you will need:
 
 ## 1. Architecture
 
-<img src="images/serverless-streaming-app.gif" width=1000 height=600> 
+<img src="images/serverless-streaming-app.gif" width=1000 height=500> 
 
  <br />
 
