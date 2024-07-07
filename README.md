@@ -30,7 +30,7 @@ Before Starting this guide,you will need:
 
 ## 1. Architecture
 
-<img src="images/serverless-streaming-ap.gif" > 
+<img src="images/archit-serverless-setream-app.gif" > 
 
  <br />
 
