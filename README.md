@@ -1,10 +1,11 @@
 ## Building serverless video streaming application using S3 Bucket CloudFront ReactJS
 
-![GitHub](https://img.shields.io/github/license/fermat01/BreadcrumbsBuilding-serverless-video-streaming-app?style=flat)
-![GitHub top language](https://img.shields.io/github/languages/top/fermat01/BreadcrumbsBuilding-serverless-video-streaming-app?style=flat)
-![GitHub language count](https://img.shields.io/github/languages/count/fermat01/BreadcrumbsBuilding-serverless-video-streaming-app?style=flat)
-![GitHub last commit](https://img.shields.io/github/last-commit/fermat01/BreadcrumbsBuilding-serverless-video-streaming-app?style=flat)
-![ViewCount](https://views.whatilearened.today/views/github/fermat01/BreadcrumbsBuilding-serverless-video-streaming-app?cache=remove)
+![GitHub](https://img.shields.io/github/license/fermat01/Building-serverless-video-streaming-app?style=flat)
+![GitHub top language](https://img.shields.io/github/languages/top/fermat01/Building-serverless-video-streaming-app?style=flat)
+![GitHub language count](https://img.shields.io/github/languages/count/fermat01/Building-serverless-video-streaming-app?style=flat)
+![GitHub last commit](https://img.shields.io/github/last-commit/fermat01/Building-serverless-video-streaming-app?style=flat)
+![ViewCount](https://views.whatilearened.today/views/github/fermat01/Building-serverless-video-streaming-app.svg?cache=remove)
+
 
 Introduction
 
