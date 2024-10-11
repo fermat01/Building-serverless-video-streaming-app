@@ -7,7 +7,7 @@
 ![ViewCount](https://views.whatilearened.today/views/github/fermat01/Building-serverless-video-streaming-app.svg?cache=remove)
 
 
-Introduction
+## Introduction
 
 Have you ever been curious about the technology behind streaming videos on platforms like YouTube,NetFlix, and Facebook? In this project, we build a simple serverless video streaming service using S3 Bucket, CloudFront and ReactJS to create a frontend web application.
 we're going to design and implement a serverless architecture for a service. Our system will enable users to upload videos, which we will then convert to HTTP Live Streaming (HLS) format, ensuring compatibility across all HLS-supported video players.
